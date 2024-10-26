@@ -1,6 +1,9 @@
-package co.com.marcas.entity;
+package co.com.marcas.apirest.entity;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Basic;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,13 +12,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Mascota {
+public class TipoMascota {
     @Id
     @GeneratedValue
     private Long id;
     @Basic
     private String nombre;
-    private String id_tipo_mascota;
-    private Integer edad;
-    private boolean disponible;
 }
